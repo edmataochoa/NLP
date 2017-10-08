@@ -1,14 +1,12 @@
 import nltk
+import sys
 from nltk.corpus import brown
 
+print(sys.version)
 print(brown.words())
 
-sentence = "Who are you, anyway?"
+sentence = "Hi. I'm testing tokenizing strings."
 
 tokens = nltk.word_tokenize(sentence)
 
 print(nltk.word_tokenize(sentence))
-
-for word in tokens:
-    if word.isalpha():
-        print(word)
